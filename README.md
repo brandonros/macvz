@@ -34,6 +34,11 @@ export DOCKER_HOST=unix://${HOME}/.macvz/docker/sock/docker.sock
 
 That's it !! 
 
+## Using macvz to run k3s
+To start a k3s VM, run the following command
+```
+macvz start https://raw.githubusercontent.com/mac-vz/macvz/main/examples/k3s.yaml
+```
 
 ## Other macvz commands
 

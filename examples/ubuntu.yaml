@@ -1,0 +1,22 @@
+images:
+- kernel: "https://cloud-images.ubuntu.com/releases/focal/release/unpacked/ubuntu-20.04-server-cloudimg-amd64-vmlinuz-generic"
+  initram: "https://cloud-images.ubuntu.com/releases/focal/release/unpacked/ubuntu-20.04-server-cloudimg-amd64-initrd-generic"
+  base: "https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-amd64.tar.gz"
+  arch: "x86_64"
+- kernel: "https://cloud-images.ubuntu.com/releases/focal/release/unpacked/ubuntu-20.04-server-cloudimg-arm64-vmlinuz-generic"
+  initram: "https://cloud-images.ubuntu.com/releases/focal/release/unpacked/ubuntu-20.04-server-cloudimg-arm64-initrd-generic"
+  base: "https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-arm64.tar.gz"
+  arch: "aarch64"
+mounts:
+- location: "~"
+  writable: true
+disk: 20GB
+portForwards:
+  - guestPortRange:
+      - 1
+      - 65535
+    hostIP: 0.0.0.0
+hostResolver:
+  enabled: true
+  hosts:
+    host.ubuntu.internal: host.macvz.internal

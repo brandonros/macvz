@@ -37,7 +37,8 @@ That's it !!
 ## Using macvz to run k3s
 To start a k3s VM, run the following command
 ```
-macvz start https://raw.githubusercontent.com/mac-vz/macvz/main/examples/k3s.yaml
+macvz start https://raw.githubusercontent.com/brandonros/macvz/k3s/examples/k3s.yaml
+macvz start https://raw.githubusercontent.com/brandonros/macvz/ubuntu/examples/k3s.yaml
 ```
 
 ## Other macvz commands

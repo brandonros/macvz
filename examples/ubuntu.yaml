@@ -10,7 +10,7 @@ images:
 mounts:
 - location: "~"
   writable: true
-disk: 20GB
+disk: 32GB
 portForwards:
   - guestPortRange:
       - 1
